@@ -17,7 +17,7 @@
     -- [products]__________________________________________________|[categories]_________
     -- |_id_|_name_______________|_amount_|_price__|_id_categories_||_id_|_name_________|
     -- | 1 -| Two-doors wardrobe | 100   -| 800	  -| 1            -|| 1 -| wood        -|
-    -- | 2 -| Dining table	    -| 1000	 -| 560	  -| 3            -|| 2 -| luxury      -|
+    -- | 2 -| Dining table       | 1000   | 560    | 3             || 2  | luxury       |
     -- | 3 -| Towel holder	    -| 10000 -| 25.50 -| 4            -|| 3 -| vintage     -|
     -- | 4 -| Computer desk	    -| 350	 -| 320.50 | 2            -|| 4 -| modern      -|
     -- | 5 -| Chair	            -| 3000	 -| 210.64 | 4            -||_5 _|_super luxury_|
