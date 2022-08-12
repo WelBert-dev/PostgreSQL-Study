@@ -5,23 +5,23 @@
 -- Then your job will display the name and amount of products of each category.
 
 -- Schema:
-    -- [products]                        -- [categories]
-    -- | Column             | Type    |  -- | Column  | Type    |
-    -- | id (PK)            | numeric |  -- | id (PK) | numeric |
-    -- | name	            | varchar |  -- | name	  | varchar |
+    -- [products]_____________________|[categories]_________
+    -- |_Column_____________|_Type____||_Column__|_Type____|
+    -- | id (PK)            | numeric || id (PK) | numeric |
+    -- | name	            | varchar ||_name____|_varchar_|
     -- | amount             | numeric |
     -- | price	            | numeric |
-    -- | id_categories (FK)	| numeric | 
+    -- |_id_categories (FK)_|_numeric_| 
     
 -- Tables:
-    -- [products]                                                     -- [categories]
-    -- | id | name               | amount | price  | id_categories |  -- | id | name         |
-    -- | 1	| Two-doors wardrobe | 100    | 800	   | 1             |  -- | 1  | wood         |
-    -- | 2	| Dining table	     | 1000	  | 560	   | 3             |  -- | 2  | luxury       |
-    -- | 3	| Towel holder	     | 10000  | 25.50  | 4             |  -- | 3  | vintage      |
-    -- | 4 	| Computer desk	     | 350	  | 320.50 | 2             |  -- | 4  | modern       |
-    -- | 5	| Chair	             | 3000	  | 210.64 | 4             |  -- | 5  | super luxury |
-    -- | 6	| Single bed	     | 750	  | 460	   | 1             |  
+    -- [products]__________________________________________________|[categories]_________
+    -- |_id_|_name_______________|_amount_|_price__|_id_categories_||_id_|_name_________|
+    -- | 1	| Two-doors wardrobe | 100    | 800	   | 1             || 1  | wood         |
+    -- | 2	| Dining table	     | 1000	  | 560	   | 3             || 2  | luxury       |
+    -- | 3	| Towel holder	     | 10000  | 25.50  | 4             || 3  | vintage      |
+    -- | 4 	| Computer desk	     | 350	  | 320.50 | 2             || 4  | modern       |
+    -- | 5	| Chair	             | 3000	  | 210.64 | 4             ||_5 _|_super luxury_|
+    -- |_6__|_Single bed_________|_750____|_460____|_1_____________|  
 
 ----> Make the structure:
 
@@ -63,8 +63,8 @@ GROUP BY categories.name
 ORDER BY name ASC;
 
 ----> OUTPUT:
-    -- | name	 | sum   |
+    -- |_nam_____|_sum___|
     -- | luxury  | 350   |
     -- | modern  | 13000 |
     -- | vintage | 1000  |
-    -- | wood	 | 850   |
+    -- |_wood____|_850___|
