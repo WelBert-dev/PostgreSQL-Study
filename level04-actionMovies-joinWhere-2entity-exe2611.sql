@@ -54,9 +54,4 @@ SELECT movies.id, movies.name
 FROM movies
 INNER JOIN genres ON (movies.id_genres = genres.id)
 WHERE genres.description = 'Action';
- 
-----> OutPut:
--- |_id_|_name_________________________|
--- | 1  | Batman                       |
--- |_2__|_The Battle of the Dark River_|
-                          
+                         
