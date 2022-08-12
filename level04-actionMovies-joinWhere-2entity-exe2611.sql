@@ -14,7 +14,7 @@
     -- | 1  | Batman                       | 3         || 1  | Animation   |
     -- | 2  | The Battle of the Dark River | 3         || 2  | Horror      |
     -- | 3  | White Duck                   | 1         || 3  | Action      |
-    -- | 4	| Breaking Barriers            | 4         || 4  | Drama       |
+    -- | 4  | Breaking Barriers            | 4         || 4  | Drama       |
     -- |_5__|_The Two Hours________________|_2_________||_5__|_Comedy______|
 
 -- Output Sample:
