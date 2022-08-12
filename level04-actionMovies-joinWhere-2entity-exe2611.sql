@@ -1,7 +1,10 @@
--- A video store contractor hired her services to catalog her movies. 
--- They need you to select the code and the name of the movies whose description of the genre is 'Action'.
+-- Challenge Link: https://www.beecrowd.com.br/judge/en/problems/view/2611
 
--- Schema:
+-- Challenge description:
+    -- A video store contractor hired her services to catalog her movies. 
+    -- They need you to select the code and the name of the movies whose description of the genre is 'Action'.
+
+-- Schema's:
     -- [_movies_]__________________[_genres_]_______________ 
     -- |_Column_________|_Type____||_Column______|_Type____|
     -- | id (PK)        | numeric || id (PK)     | numeric |
@@ -22,7 +25,7 @@
     -- | 1  | Batman                       |
     -- |_2__|_The Battle of the Dark River_|
     
-----> Make the Structure:
+----> Make's the Structure:
 
 CREATE TABLE IF NOT EXISTS genres (
   id SERIAL PRIMARY KEY,
