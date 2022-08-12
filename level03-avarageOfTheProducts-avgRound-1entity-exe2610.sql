@@ -46,21 +46,3 @@ INSERT INTO products VALUES (1, 'Two-doors wardrobe', 100,     800),
 
 SELECT round(AVG(price), 2) AS price
 FROM products;
-
-----> OutPut:
-      -- |_price__|
-      -- |_327.11_|
-
-
-
-
-
-
-
-
-
-
-
-
-
-
