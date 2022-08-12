@@ -23,6 +23,13 @@
     -- | 5  | Chair              | 3000   | 210.64 | 4             ||_5 _|_super luxury_|
     -- |_6__|_Single bed_________|_750____|_460____|_1_____________|  
 
+-- Output Sample:
+    -- |_nam_____|_sum___|
+    -- | luxury  | 350   |
+    -- | modern  | 13000 |
+    -- | vintage | 1000  |
+    -- |_wood____|_850___|
+
 ----> Make the structure:
 
 CREATE TABLE IF NOT EXISTS tbl_categories(
@@ -61,10 +68,3 @@ FROM products
 INNER JOIN categories ON (products.id_categories = categories.id)
 GROUP BY categories.name
 ORDER BY name ASC;
-
-----> OUTPUT:
-    -- |_nam_____|_sum___|
-    -- | luxury  | 350   |
-    -- | modern  | 13000 |
-    -- | vintage | 1000  |
-    -- |_wood____|_850___|
