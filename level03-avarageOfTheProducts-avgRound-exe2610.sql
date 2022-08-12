@@ -8,7 +8,7 @@
     -- [products]
     -- |_Column__|_Type____| 
     -- | id (PK) | numeric |
-    -- | name	   | varchar |
+    -- | name    | varchar |
     -- | amount	 | numeric |
     -- |_price___|_numeric_|
     
