@@ -1,8 +1,10 @@
--- In the past the studio has made an event where several movies were on sale, we want to know what movies these were.
+-- Challenge Link: https://www.beecrowd.com.br/judge/en/problems/view/2613
 
--- Your job to help us is to select the ID and name of movies whose price is less than 2.00.
+-- Challenge description:
+  -- In the past the studio has made an event where several movies were on sale, we want to know what movies these were.
+  -- Your job to help us is to select the ID and name of movies whose price is less than 2.00.
 
--- Schema:
+-- Schema's:
   -- [_movies_]__________________[_prices_]_______________ 
   -- |_Column_________|_Type____||_Column______|_Type____|
   -- | id (PK)        | numeric || id (PK)     | numeric |
@@ -22,7 +24,7 @@
   --|_id_|__name_______
   --|_3__|_White Duck_|
   
-----> Make the Structure:
+----> Make's the Structure:
 
 CREATE TABLE IF NOT EXISTS prices (
   id SERIAL PRIMARY KEY,
