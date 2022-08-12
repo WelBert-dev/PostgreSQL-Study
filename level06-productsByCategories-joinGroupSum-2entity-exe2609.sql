@@ -1,10 +1,10 @@
--- USEI ONLINE: https://extendsclass.com/postgresql-online.html 
+-- Challenge Link: https://www.beecrowd.com.br/judge/en/problems/view/2609
 
--- As usual the sales industry is doing an analysis of how many products we have in stock, and you can help them.
+-- Challenge description:
+    -- As usual the sales industry is doing an analysis of how many products we have in stock, and you can help them.
+    -- Then your job will display the name and amount of products of each category.
 
--- Then your job will display the name and amount of products of each category.
-
--- Schema:
+-- Schema's:
     -- [products]_____________________|[categories]_________
     -- |_Column_____________|_Type____||_Column__|_Type____|
     -- | id (PK)            | numeric || id (PK) | numeric |
@@ -30,7 +30,7 @@
     -- | vintage | 1000  |
     -- |_wood____|_850___|
 
-----> Make the structure:
+----> Make's the structure:
 
 CREATE TABLE IF NOT EXISTS tbl_categories(
   id SERIAL PRIMARY KEY,
