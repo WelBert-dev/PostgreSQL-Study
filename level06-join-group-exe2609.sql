@@ -8,7 +8,7 @@
     -- [products]                        -- [categories]
     -- | Column             | Type    |  -- | Column  | Type    |
     -- | id (PK)            | numeric |  -- | id (PK) | numeric |
-    -- | name	              | varchar |  -- | name	  | varchar |
+    -- | name	            | varchar |  -- | name	  | varchar |
     -- | amount             | numeric |
     -- | price	            | numeric |
     -- | id_categories (FK)	| numeric | 
@@ -16,12 +16,14 @@
 -- Tables:
     -- [products]                                                     -- [categories]
     -- | id | name               | amount | price  | id_categories |  -- | id | name         |
-    -- | 1	| Two-doors wardrobe | 100    | 800	   | 1             |  -- | 1	| wood         |
+    -- | 1	| Two-doors wardrobe | 100    | 800	   | 1             |  -- | 1  | wood         |
     -- | 2	| Dining table	     | 1000	  | 560	   | 3             |  -- | 2  | luxury       |
-    -- | 3	| Towel holder	     | 10000	| 25.50  | 4             |  -- | 3  | vintage      |
+    -- | 3	| Towel holder	     | 10000  | 25.50  | 4             |  -- | 3  | vintage      |
     -- | 4 	| Computer desk	     | 350	  | 320.50 | 2             |  -- | 4  | modern       |
-    -- | 5	| Chair	             | 3000	  | 210.64 | 4             |  -- | 5	| super luxury |
-    -- | 6	| Single bed	       | 750	  | 460	   | 1             |  
+    -- | 5	| Chair	             | 3000	  | 210.64 | 4             |  -- | 5  | super luxury |
+    -- | 6	| Single bed	     | 750	  | 460	   | 1             |  
+
+----> Make the structure:
 
 CREATE TABLE IF NOT EXISTS tbl_categories(
   id SERIAL PRIMARY KEY,
@@ -51,7 +53,8 @@ INSERT INTO products VALUES (1, 'Two-doors wardrobe', 100,   800,     1),
                             (5,	'Chair',              3000,  210.64,  4),
                             (6,	'Single bed',	        750,   460,    	1);
 
--- Soluction:
+
+----> Soluction:
 
 SELECT categories.name AS name, SUM(products.amount) AS sum 
 FROM products
@@ -59,9 +62,9 @@ INNER JOIN categories ON (products.id_categories = categories.id)
 GROUP BY categories.name
 ORDER BY name ASC;
 
--- OutPut:
-   -- | name	  | sum   |
-   -- | luxury  | 350   |
-   -- | modern  | 13000 |
-   -- | vintage |	1000  |
-   -- | wood	  | 850   |
+----> OUTPUT:
+    -- | name	 | sum   |
+    -- | luxury  | 350   |
+    -- | modern  | 13000 |
+    -- | vintage | 1000  |
+    -- | wood	 | 850   |
