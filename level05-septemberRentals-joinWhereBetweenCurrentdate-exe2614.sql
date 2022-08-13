@@ -16,10 +16,10 @@
   -- [customers]_________________________________________________________________________|[rentals]___________________________
   -- |_id_|_name________________________|_street_________________________|_city__________||_id_|_rentals_date_|_id_customers_|
   -- | 1  | Giovanna Goncalves Oliveira | Rua Mato Grosso                | Canoas        || 1  | 2016-09-10   | 3            |
-  -- | 2  | Kauã Azevedo Ribeiro        | Travessa Ibiá                  | Uberlândia    || 2  | 2016-02-09	  | 1            |
-  -- | 3  | Rebeca Barbosa Santos       | Rua Observatório Meteorológico | Salvador      || 3  | 2016-02-08	  | 4            |
-  -- | 4  | Sarah Carvalho Correia      | Rua Antônio Carlos da Silva    | Apucarana     || 4  | 2016-02-09	  | 2            |
-  -- | 5  | João Almeida Lima           | Rua Rio Taiuva                 | Ponta Grossa  || 5  | 2016-02-03	  | 6            |
+  -- | 2  | Kauã Azevedo Ribeiro        | Travessa Ibiá                  | Uberlândia    || 2  | 2016-02-09   | 1            |
+  -- | 3  | Rebeca Barbosa Santos       | Rua Observatório Meteorológico | Salvador      || 3  | 2016-02-08   | 4            |
+  -- | 4  | Sarah Carvalho Correia      | Rua Antônio Carlos da Silva    | Apucarana     || 4  | 2016-02-09   | 2            |
+  -- | 5  | João Almeida Lima           | Rua Rio Taiuva                 | Ponta Grossa  || 5  | 2016-02-03   | 6            |
   -- |_6__|_Diogo Melo Dias_____________|_Rua Duzentos e Cinqüenta_______|_Várzea Grande_||_6__|_2016-04-04___|_4____________|
     
 -- Output Sample:
