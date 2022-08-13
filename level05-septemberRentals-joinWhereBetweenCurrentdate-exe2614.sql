@@ -8,7 +8,7 @@
   -- [customers]_____________________|[rentals]_____________________
   -- |_Column_____________|_Type____||_Column____________|_Type____|
   -- | id (PK)            | numeric || id (PK)           | numeric |
-  -- | name	              | varchar || rentals_date      | date    |
+  -- | name               | varchar || rentals_date      | date    |
   -- | street             | varchar ||_id_customers (FK)_|_numeric_|
   -- |_city_______________|_varchar_|
 
