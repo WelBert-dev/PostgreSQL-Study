@@ -58,3 +58,9 @@ INSERT INTO locations VALUES (1, '2016-10-09', 3),
                              (6, '2016-04-04', 4);
 
 ----> Soluction:
+
+SELECT customers.id, customers.name
+FROM customers
+LEFT JOIN locations ON (customers.id = locations.id_customers)
+WHERE locations.id_customers IS NULL
+ORDER BY customers.id;
