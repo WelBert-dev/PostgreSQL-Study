@@ -1,6 +1,3 @@
--- Expanding the Business
-
-
 -- Challenge Link: https://www.beecrowd.com.br/judge/en/problems/view/2615
 
 -- Challenge description:
@@ -51,3 +48,5 @@ INSERT INTO customers VALUES (1, 'Giovanna Goncalves Oliveira', 'Rua Mato Grosso
 
 ----> Soluction:
 
+SELECT DISTINCT city
+FROM customers;
