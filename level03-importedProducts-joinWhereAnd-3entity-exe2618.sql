@@ -55,5 +55,9 @@ INSERT INTO products VALUES (1, 'Blue Chair', 30, 300.00, 5, 5),
                             
 
 ----> Soluction:
-                           
-  
+
+SELECT p.name, f.name, c.name
+FROM products AS P 
+JOIN providers AS f ON (p.id_providers = f.id)
+JOIN categories AS c ON (p.id_categories = c.id)
+WHERE f.name = 'Sansul SA' AND c.name = 'Imported';
